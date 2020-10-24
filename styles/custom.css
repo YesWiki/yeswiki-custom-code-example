@@ -1,0 +1,10 @@
+/* Customize Css variable */
+body {
+	--primary-color: #f9be1b;
+	--secondary-color-1: #1A89A0;
+  --main-text-fontfamily: 'Open Sans', sans-serif;
+}
+/* Adds custom code */
+#yw-topnav {
+  height: 6rem;
+}

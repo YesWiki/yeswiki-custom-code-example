@@ -1,0 +1,8 @@
+Podcast form
+
+texte***bf_titre***Titre*** *** *** *** ***text***1*** *** *** * *** * *** *** ***
+listedatedeb***date***Date de publication*** *** *** *** *** ***0*** *** *** * *** * *** *** ***
+texte***duration***Durée du podcast*** *** *** *** ***text***0*** *** *** * *** * *** *** ***
+lien_internet***mixcloud_url***Url du podcast sur Mixcloud*** *** *** *** ***url***1*** *** *** * *** * *** *** ***
+textelong***description***Description*** ***10*** *** ***html***0*** *** *** * *** * *** *** ***
+image***bf_image***Image***300***300***600***600***right***0*** *** *** * *** * *** *** ***
