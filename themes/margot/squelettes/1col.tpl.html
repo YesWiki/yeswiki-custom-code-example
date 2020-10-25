@@ -1,0 +1,52 @@
+<!-- MY CUSTOM SQUELETTE -->
+<!-- I made it simpler by removing PageHeader and PageFooter -->
+<!-- I added a fake Title for testing -->
+<head>
+  <!-- HTML Metas -->
+  <meta charset="{{configuration param="charset"}}">
+  {{metarobots}}
+  <meta name="keywords" content="{{configuration param="meta_keywords"}}" />
+  <meta name="description" content="{{configuration param="meta_description"}}" />
+  <meta name="viewport" content="width=device-width" />
+
+  <!-- Title of the page -->
+  <title>{{configuration param="wakka_name"}} : {{titrepage}}</title>
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" type="image/x-icon" href="{{configuration param="theme_path"}}images/favicon.ico" />
+  <link rel="apple-touch-icon" href="{{configuration param="theme_path"}}images/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" href="{{configuration param="theme_path"}}images/favicon.png" />
+
+  {{linkstyle}}
+  {{linkrss}}
+</head>
+
+<body {{parambody}}>
+  <div id="yw-container">
+    <nav id="yw-topnav" class="navbar navbar-default fixable" role="navigation">
+      <div class="container">
+          <button class="btn btn-default btn-menu"><span class="fa fa-bars"></span></button>
+          <div class="navbar-header">
+            <a class="navbar-brand" href="{{configuration param="base_url"}}{{configuration param="root_page"}}">
+              {{include page="PageTitre" doubleclic="1"}}
+            </a>
+          </div> <!-- /.navbar-header -->
+          {{include page="PageMenuHaut" class="yw-topnav topnavpage links-container" doubleclic="1" actif="1"}}
+          {{include page="PageRapideHaut" class="yw-topnav-fast-access pull-right" doubleclic="1" actif="1"}}
+        </div> <!-- /.container -->
+    </nav><!-- /#yw-topnav -->
+
+    <div id="yw-main" role="main" {{doubleclic}}>
+      <div class="yw-main-content alone">
+
+        <h1>This is a custom squelette. Change me in <pre>custom/themes/margot/squelettes/1col.tpl.html</pre></h1>
+        
+        {WIKINI_PAGE}
+      </div> <!-- /.container -->
+    </div><!-- /#yw-main -->
+
+  </div> <!-- /#yw-container -->
+
+  {{linkjavascript}}
+</body>
+</html>
