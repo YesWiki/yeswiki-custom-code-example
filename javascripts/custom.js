@@ -1,3 +1,1 @@
-function() {
-    console.log("This is custom code");
-}
+console.log("This is custom code");

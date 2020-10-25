@@ -1,6 +1,7 @@
 <!-- MY CUSTOM SQUELETTE -->
 <!-- I made it simpler by removing PageHeader and PageFooter -->
 <!-- I added a fake Title for testing -->
+<!doctype html>
 <head>
   <!-- HTML Metas -->
   <meta charset="{{configuration param="charset"}}">
@@ -13,8 +14,6 @@
   <title>{{configuration param="wakka_name"}} : {{titrepage}}</title>
 
   <!-- Favicons -->
-  <link rel="shortcut icon" type="image/x-icon" href="{{configuration param="theme_path"}}images/favicon.ico" />
-  <link rel="apple-touch-icon" href="{{configuration param="theme_path"}}images/apple-touch-icon.png" />
   <link rel="icon" type="image/png" href="{{configuration param="theme_path"}}images/favicon.png" />
 
   {{linkstyle}}
@@ -36,17 +35,28 @@
         </div> <!-- /.container -->
     </nav><!-- /#yw-topnav -->
 
+    <header id="yw-header" class="text-center">
+      {{include page="PageHeader" class="yw-headerpage" doubleclic="1"}}
+      <h1>This is a custom squelette. Change me in</h1>
+      <span class="label label-default">custom/themes/margot/squelettes/1col.tpl.html</span>
+    </header><!-- /#yw-header -->
+
     <div id="yw-main" role="main" {{doubleclic}}>
       <div class="yw-main-content alone">
-
-        <h1>This is a custom squelette. Change me in <pre>custom/themes/margot/squelettes/1col.tpl.html</pre></h1>
-        
         {WIKINI_PAGE}
       </div> <!-- /.container -->
     </div><!-- /#yw-main -->
 
+    {{barreredaction}}
+
+    <footer id="yw-footer">
+      <div class="container">
+        {{include page="PageFooter" class="footerpage" doubleclic="1"}}
+      </div> <!-- /.container -->
+    </footer><!-- /#yw-footer -->
   </div> <!-- /#yw-container -->
 
   {{linkjavascript}}
 </body>
 </html>
+
